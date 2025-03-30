@@ -1,0 +1,26 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Vendor directory
+vendor/
+
+# Go modules
+go.mod
+go.sum
+
+# IDE/editor settings and temporary files
+.idea/
+.vscode/
+*.swp
+*.tmp
+
+.DS_Store
