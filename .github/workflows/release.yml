@@ -63,8 +63,8 @@ jobs:
       - name: Build
         run: |
           VERSION=${{ env.VERSION }}
-          GOOS=linux GOARCH=amd64 go build -ldflags "-X cannon/src/cmd.compiledVersion=$VERSION" -o dist/cannon-linux ./src/main.go
-          GOOS=darwin GOARCH=amd64 go build -ldflags "-X cannon/src/cmd.compiledVersion=$VERSION" -o dist/cannon-darwin ./src/main.go
+          GOOS=linux GOARCH=amd64 go build -ldflags "-X cannon/src/main.compiledVersion=$VERSION" -o dist/cannon-linux ./src/main.go
+          GOOS=darwin GOARCH=amd64 go build -ldflags "-X cannon/src/main.compiledVersion=$VERSION" -o dist/cannon-darwin ./src/main.go
       - name: Generate version.txt
         run: echo "${{ env.VERSION }}" > version.txt
       - name: Create Tag

@@ -23,4 +23,6 @@ go.sum
 *.swp
 *.tmp
 
+dist
+
 .DS_Store
